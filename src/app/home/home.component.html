@@ -1,0 +1,74 @@
+<div [ngClass]="(switchLanBtnVal=='English')?'home':'home-arabic'">
+    <div class="form-div">
+        <p class="table_lable text-center">{{'home.Form_Label' | translate}}</p>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">{{'home.Employee_Name' | translate}}</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">{{'home.Star_Time' | translate}}</label>
+                        <input type="date" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label" for="exampleCheck1">{{'home.End_Time' | translate}}</label>
+                        <input type="date" class="form-control" id="exampleCheck1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">{{'home.Entry_Notes' | translate}}</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label" >{{'home.Deleted_On' | translate}}</label>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn">{{'home.Submit' | translate}}</button>
+        </form>
+    </div>
+    <p class="table_lable">{{'home.Table_Label' | translate}}</p>
+    <div>
+        <table class="table text-center table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">{{'home.Employee_Name' | translate}}</th>
+                    <th scope="col">{{'home.Star_Time' | translate}}</th>
+                    <th scope="col">{{'home.End_Time' | translate}}</th>
+                    <th scope="col">{{'home.Entry_Notes' | translate}}</th>
+                    <th scope="col">{{'home.Deleted_On' | translate}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of emplData | paginate
+                : {
+                    itemsPerPage: tableSize,
+                    currentPage: page,
+                    totalItems: count
+                  }; let i = index">
+                    <th>{{i+1}}</th>
+                    <td>{{item.EmployeeName}}</td>
+                    <td>{{item.StarTimeUtc}}</td>
+                    <td>{{item.EndTimeUtc}}</td>
+                    <td>{{item.EntryNotes}}</td>
+                    <td>{{item.DeletedOn}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+        <pagination-controls previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)">
+        </pagination-controls>
+    </div>
+</div>

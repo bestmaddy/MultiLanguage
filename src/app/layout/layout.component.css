@@ -1,0 +1,133 @@
+.top-bar {
+    background: rgba(234, 223, 241, 0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: margin-left .5s;
+    z-index: 1;
+}
+
+.top-bar a {
+    font-size: 30px;
+}
+
+.top-bar .btn {
+    color: var(--text);
+    background: var(--primary);
+}
+
+.sidebar {
+    background: rgba(234, 223, 241, 0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    transition: margin-left .5s;
+    min-height: 90%;
+    width: 55px;
+    position: fixed;
+    z-index: 1;
+    top: calc(55px-100);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+}
+
+.sidebar:hover {
+    width: 250px;
+}
+
+.sidebar .sidebar-ul {
+    list-style: none;
+    padding: 0 15px;
+    color: var(--text);
+    margin-top: 30px;
+}
+
+.sidebar .sidebar-ul .sidebar-li {
+    margin: 10px 0;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.sidebar .sidebar-ul .sidebar-li:hover {
+    background: var(--primary);   
+}
+
+/* .sidebar-ul .sidebar-li {
+    width: 20px;
+    margin-right: 10px;
+} */
+
+.sidebar-ul .sidebar-li .sidebar-p {
+    white-space: nowrap;
+    margin-left: 18px;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: var(--text);
+    display: none;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    text-decoration: none;
+}
+
+.openbtn:hover {
+    background-color: var(--primary);
+}
+
+.main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 50px;
+    -webkit-transition: margin-left .5s;
+    -moz-transition: margin-left .5s;
+    -ms-transition: margin-left .5s;
+    -o-transition: margin-left .5s;
+}
+
+.main-arabic {
+    transition: margin-right .5s;
+    padding: 16px;
+    margin-right: 50px;
+    text-align: end;
+    -webkit-transition: margin-right .5s;
+    -moz-transition: margin-right .5s;
+    -ms-transition: margin-right .5s;
+    -o-transition: margin-right .5s;
+}
+
+/* arabic style */
+.sidebar-arabic {
+    right: 0;
+}
+
+.sidebar-ul .sidebar-li-arabic {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin: 10px 0;
+    padding: 5px;
+    cursor: pointer;
+}
+.sidebar-ul .sidebar-li-arabic:hover{
+    background: var(--primary);
+}
+.sidebar-ul .sidebar-li-arabic .sidebar-p-arabic{
+    white-space: nowrap;
+    margin-right: 18px;
+    margin-left: auto;
+}

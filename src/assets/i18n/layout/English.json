@@ -1,0 +1,8 @@
+{
+    "layout" :{
+        "Administrator":"System Administrator",
+        "Private_Warehouse":"Private Warehouse",
+        "Sport_Events":"Sport Events",
+        "Registration":"Registration"
+    }
+}

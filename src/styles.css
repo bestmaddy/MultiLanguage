@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
+:root {
+    --text: #130b19;
+    /* --background: #eadff1;#c3a0d9 */
+    --background: #c3a0d9;
+    --primary:#987543;
+    --secondary:#e2d4ec;
+    --accent:#4baa82;
+  }
+  body{
+    background: var(--background) !important;
+    /* background: linear-gradient(140deg, var(--background) 80%, var(--accent)); */
+  }

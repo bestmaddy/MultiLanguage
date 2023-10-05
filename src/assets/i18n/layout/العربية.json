@@ -1,0 +1,8 @@
+{
+    "layout" :{
+        "Administrator":"مسؤول النظام",
+        "Private_Warehouse":"مستودع خاص",
+        "Sport_Events":"الأحداث الرياضية",
+        "Registration":"تسجيل"
+    }
+}

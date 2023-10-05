@@ -1,0 +1,13 @@
+{
+    "home" :{
+        "Table_Label":"بيانات الموظف",
+        "Employee_Name":"اسم الموظف",
+        "Star_Time":"ستار تايم",
+        "End_Time":"وقت الانتهاء",
+        "Entry_Notes":"ملاحظات الإدخال",
+        "Deleted_On":"تم الحذف في",
+        "Submit":"إرسال",
+        "Form_Label":"نموذج دخول الموظف"
+
+    }
+}

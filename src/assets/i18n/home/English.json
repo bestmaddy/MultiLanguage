@@ -1,0 +1,12 @@
+{
+    "home" :{
+        "Table_Label":"Employee Data",
+        "Employee_Name":"Employee Name",
+        "Star_Time":"Star Time",
+        "End_Time":"End Time",
+        "Entry_Notes":"Entry Notes",
+        "Deleted_On":"Deleted On",
+        "Submit":"Submit",
+        "Form_Label":"Employee Entry Form"
+    }
+}
