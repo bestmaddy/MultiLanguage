@@ -4,33 +4,34 @@
         <form>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">{{'home.Employee_Name' | translate}}</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Employee_Name"
+                            aria-describedby="emailHelp">
+                        <label for="exampleInputEmail1" class="">{{'home.Employee_Name' | translate}}</label>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">{{'home.Star_Time' | translate}}</label>
-                        <input type="date" class="form-control" id="exampleInputPassword1">
+                    <div class="mb-3 form-floating">
+                        <input type="date" class="form-control" placeholder="Star_Time" id="exampleInputPassword1">
+                        <label for="exampleInputPassword1" class="">{{'home.Star_Time' | translate}}</label>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="mb-3">
-                        <label class="form-label" for="exampleCheck1">{{'home.End_Time' | translate}}</label>
-                        <input type="date" class="form-control" id="exampleCheck1">
+                    <div class="mb-3 form-floating">
+                        <input type="date" class="form-control" id="exampleCheck1" placeholder="End_Time">
+                        <label class="" for="exampleCheck1">{{'home.End_Time' | translate}}</label>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="mb-3">
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" placeholder="Entry_Notes">
                         <label class="form-label">{{'home.Entry_Notes' | translate}}</label>
-                        <input type="text" class="form-control">
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="mb-3">
-                        <label class="form-label" >{{'home.Deleted_On' | translate}}</label>
-                        <input type="date" class="form-control">
+                    <div class="mb-3 form-floating">
+                        <input type="date" class="form-control" placeholder="Deleted_On">
+                        <label class="form-label">{{'home.Deleted_On' | translate}}</label>
                     </div>
                 </div>
             </div>
@@ -38,7 +39,7 @@
         </form>
     </div>
     <p class="table_lable">{{'home.Table_Label' | translate}}</p>
-    <div>
+    <div class="table-dev">
         <table class="table text-center table-striped table-hover">
             <thead>
                 <tr>

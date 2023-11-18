@@ -1,13 +1,11 @@
-/* .home{
-    transition: margin-left .5s;
-    padding: 16px;
-}
-.home-arabic{
-    transition: margin-left .5s;
-    padding: 16px;
-} */
 .table_lable {
     font-size: 20px;
+    text-align: center;
+    margin-top: 2rem;
+    background: var(--primary);
+    color: var(--text);
+    margin-bottom: 0;
+    padding: 0.5rem;
 }
 
 .form-div {
@@ -16,19 +14,19 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .form-div p {
     background: var(--primary);
-    color: var(--secondary);
+    color: var(--text);
     bottom: 0;
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     padding: 10px;
-    width: 50%;
+    width: 60dvw;
     margin-bottom: 0px;
 }
 
@@ -38,7 +36,7 @@
 }
 
 .form-div form {
-    width: 50%;
+    width: 60dvw;
     background: rgba(234, 223, 241, 0.1);
     backdrop-filter: blur(15px);
     box-shadow: 0 15px 25px rgb(0, 0, 0, 0.1);
@@ -50,4 +48,21 @@
     -ms-border-right-radius: 20px;
     -o-border-right-radius: 20px;
     padding: 20px;
+}
+
+.form-div form input {
+    background: transparent;
+}
+
+.table-dev {
+    width: auto;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    text-wrap: nowrap;
+}
+
+.table-dev>.table {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background: transparent;
 }

@@ -14,6 +14,6 @@
     box-sizing: border-box;
   }
   body{
-    background: var(--background) !important;
-    /* background: linear-gradient(140deg, var(--background) 80%, var(--accent)); */
+    /* background: var(--background) !important; */
+    background: linear-gradient(140deg, var(--background) 5%, var(--accent), var(--primary)) !important;
   }
