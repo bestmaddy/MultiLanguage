@@ -8,6 +8,11 @@
     --secondary:#e2d4ec;
     --accent:#4baa82;
   }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   body{
     background: var(--background) !important;
     /* background: linear-gradient(140deg, var(--background) 80%, var(--accent)); */
