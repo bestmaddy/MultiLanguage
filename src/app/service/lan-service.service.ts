@@ -6,7 +6,7 @@ import { Emoloye } from '../modules/employe';
   providedIn: 'root'
 })
 export class LanServiceService {
-  selectLang = new BehaviorSubject('en')
+  selectLang = new BehaviorSubject('العربية')
   constructor() { }
 
   getEmployee(){

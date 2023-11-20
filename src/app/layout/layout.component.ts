@@ -31,13 +31,14 @@ export class LayoutComponent implements OnInit {
       this.langService.selectLang.next("العربية")
       this.trdanSlateService.use('العربية')
 
-    }
-    if (val === "العربية") {
-      // this.switchLanBtnVal = "English";
+    }else {
       this.langService.selectLang.next("English")
       this.trdanSlateService.use('English')
-
     }
+   /*  if (val === "العربية") {
+      this.langService.selectLang.next("English")
+      this.trdanSlateService.use('English')
+    } */
   }
   languageChanged() {
     this.trdanSlateService.use(this.browserLen.match(/English|العربية/)) ? this.browserLen : 'English'
